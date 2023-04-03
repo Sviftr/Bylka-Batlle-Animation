@@ -1,0 +1,162 @@
+body {
+    background: url(./img/backround-for-fight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+
+.blok {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.block__VS-logo {
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    margin-top: 90px;
+    animation: VS-logo 3s linear infinite;
+}
+
+@keyframes VS-logo {
+    50%{
+        transform: scale(1.5);
+    }
+    75%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+.blok__HP {
+    position: absolute;
+    left: 250px;
+    bottom: 430px;
+    width: 290px;
+}
+
+.fa-heart {
+    color: red;
+    font-size: 25px;
+    text-shadow: 2px 1px 3px #000;
+}
+
+
+
+.blok__HP-2 {
+    position: absolute;
+    left: 1000px;
+    bottom: 380px;
+    width: 290px;
+}
+
+.fa-solid {
+    color: red;
+    font-size: 25px;
+    text-shadow: 2px 1px 3px #000;
+    animation: HP-2 3s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite alternate;
+}
+
+@keyframes HP-2 {
+    0%{
+        transform: translateX(8px) translateY(-4px) rotate(8deg);
+    }
+    100%{
+        transform: translateX(-8px) translateY(4px) rotate(-8deg);
+    }
+}
+
+
+
+
+.block__bylochki {
+    display: flex;
+    justify-content: space-between;
+    margin: 53px auto;
+    position: relative;
+}
+
+.block___bylka-s-makom {
+    position: absolute;
+    top: 48px;
+    left: -80px;
+    animation: bylka-s-makom 2s linear;
+}
+
+@keyframes bylka-s-makom {
+    0%{
+        transform: translateX(-600px);
+    }
+    100%{
+
+    }
+}
+
+.block__bylka-s-korichey {
+    position: absolute;
+    right: -80px;
+    top: 80px;
+    animation: bylka-s-korichey 2s linear;
+}
+
+@keyframes bylka-s-korichey {
+    0%{
+        transform: translateX(600px);
+    }
+    100%{
+
+    }
+}
+
+
+
+
+.blok__smoke-and-lights {
+    position: relative;
+}
+
+
+.blok__lights {
+    position: absolute;
+    bottom: 50px;
+    left: -270px;
+    animation: light-1 2.5s linear infinite alternate;
+}
+
+@keyframes light-1 {
+    0%{
+        transform: skew(-2deg) translateX(-20px) translateY(20px) scale(0.9);
+    }
+    100%{
+        transform: skew(3deg) translateY(-20px) translateX(20px) scale(1);
+    }
+}
+
+.blok__lights-2 {
+    position: absolute;
+    bottom: 30px;
+    right: -259px;
+    animation: light-2 2s linear infinite alternate;
+}
+
+@keyframes light-2 {
+    0%{
+        transform: skew(-3deg) translateX(20px) translateY(-20px) scale(0.9);
+    }
+    100%{
+        transform: skew(2deg) translateX(-20px) translateY(20px) scale(1);
+    }
+}
